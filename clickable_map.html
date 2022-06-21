@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Clickable Map</title>
+<style>
+.popup {
+    padding: 20px;
+    background-color: rgba(100, 100, 100,.95);
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    left: 670px;
+    top: 550px;
+    position: absolute;
+    visibility: hidden;
+	width: 200px;
+	
+}
+.popup > .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: black;
+    padding: 4px 10px;
+}
+.popup:target {
+    visibility: visible;
+}
+</style>
+</head>
+
+<body>
+<h1>Intensive Observations</h1>
+<p>Click each ship to see more details on individual observation missions </p>
+<img id="monsoon" src="labeled_clickable_map.png" alt="Workplace" usemap="#workmap" width="1000px">
+<map name="workmap">
+  <area shape="rect" coords="196,451,225,477" alt="1" href="#pre-ymc" >
+  <area shape="rect" coords="449,159,475,180" alt="2" href="#rsvp">
+  <area shape="rect" coords="225,454,252,476" alt="3" href="#ymc-sumatra-2017">
+  <area shape="rect" coords="196,513,223,537" alt="4" href="#EIOURI">
+  <area shape="rect" coords="408,256,434,278" alt="5" href="#SCSTIMX">
+  <area shape="rect" coords="412,106,442,130" alt="5" href="#SCSTIMX">
+  <area shape="rect" coords="290,252,318,275" alt="6-1" href="#YMC-BSM-2018">
+  <area shape="rect" coords="643,290,671,311" alt="6-1" href="#YMC-BSM-2018">
+  <area shape="rect" coords="252,103,279,125" alt="6-1" href="#YMC-BSM-2018">
+  <area shape="rect" coords="234,405,262,426" alt="6-1" href="#YMC-BSM-2018">
+  <area shape="rect" coords="441,131,469,152" alt="6-2" href="#YMC-BSM-2020">
+  <area shape="rect" coords="643,226,671,250" alt="7" href="#PISTON">
+  <area shape="rect" coords="538,154,566,177" alt="7" href="#PISTON">
+  <area shape="rect" coords="408,593,438,614" alt="8" href="#MAMOS">
+  <area shape="rect" coords="561,418,591,441" alt="9-1" href="#ocean-mixing">
+  <area shape="rect" coords="513,500,544,522" alt="9-1" href="#ocean-mixing">
+  <area shape="rect" coords="401,505,431,528" alt="9-2" href="#CAT">
+  <area shape="rect" coords="507,159,535,180" alt="10" href="#CAMP2EX">
+  <area shape="rect" coords="477,131,505,152" alt="10" href="#CAMP2EX">
+  <area shape="rect" coords="468,249,496,270" alt="10" href="#CAMP2EX">
+  <area shape="rect" coords="695,583,723,604" alt="11" href="#SST">
+  <area shape="rect" coords="503,583,531,604" alt="11" href="#SST">
+  <area shape="rect" coords="255,520,282,543" alt="12" href="#ELO">
+  <area shape="rect" coords="304,424,333,449" alt="13" href="#ELO-oceans">
+  <area shape="rect" coords="285,520,313,544" alt="14" href="#TerraMaris">
+  <area shape="rect" coords="541,471,567,493" alt="15" href="#YMC-banda-sea">
+  <area shape="rect" coords="526,524,556,544" alt="16" href="#MINTIE">
+  <area shape="rect" coords="454,402,486,424" alt="16" href="#MINTIE">
+  <area shape="rect" coords="432,501,464,523" alt="16" href="#MINTIE">
+  <area shape="rect" coords="351,403,382,422" alt="17" href="#DIMOP">
+</map>
+
+	
+<div class="popups">
+	
+<div class="popup" id="pre-ymc"> Pre-YMC Observations in 2015. <br>
+  Read more <a href="https://www.jamstec.go.jp/ymc/campaigns/IOP_pre_YMC_2015.html">here</a> <a class="close" href="#">X</a> </div>
+<div class="popup" id="rsvp"> RSVP (Regional Scales of Variability in Precipitation) in Aug 2017 <a class="close" href="#">X</a> </div>
+
+<div class="popup" id="ymc-sumatra-2017">  Indonesia-Japan Joint Research in the west coast of Sumatra in Nov 2017 - Jan 2018. <br>
+  Read more <a href="https://www.jamstec.go.jp/ymc/campaigns/IOP_YMC-Sumatra_2017.html">here</a> <a class="close" href="#">X</a> </div>
+<div class="popup" id="EIOURI">  EIOURI (Eastern Indian Ocean Upwelling Research Initiative) in Nov 2017 - Feb 2018  <a class="close" href="#">X</a> </div>	
+	
+<div class="popup" id="SCSTIMX">  SCSTIMX (SCS Two-Island Monsoon Experiment): Boreal winter monsoon study in Dec 2017, Boreal summer monsoon study in May - June 2018, Boreal summer monsoon study in Aug - Oct 2018 <br> Read more <a href="https://scstimx.as.ntu.edu.tw/#!home">here</a> <a class="close" href="#">X</a> </div>	
+	
+<div class="popup" id="YMC-BSM-2018">  YMC-BSM (Boreal Summer Monsoon study) 2018: Monsoon study in Indonesia and Viet Nam in July 2018, YMC-Laoag and YMC-Palau in July - Aug 2018 <br>
+  Read more <a href="https://www.jamstec.go.jp/ymc/campaigns/IOP_YMC-BSM_2018.html">here</a> <a class="close" href="#">X</a> </div>
+
+<div class="popup" id="YMC-BSM-2020">  YMC-BSM (Boreal Summer Monsoon study in) 2020: Special Focus on Boreal Summer Intraseasonal Oscillation (BSISO) over the Tropical Western Paicifc <br>
+  Read more <a href="https://www.jamstec.go.jp/ymc/campaigns/IOP_YMC-BSM_2020.html">here</a> <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="PISTON">  PISTON (Propagation of Intra-Seasonal Tropical Oscillations): US-Philippines Joint Research in Aug - Oct 2018, Sept 2019 <br> 
+  Read more <a href="https://onrpiston.colostate.edu/">here</a> <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="MAMOS">  MAMOS (MJO and Australian Monsoon Onset Study) & CSHOR's Coupled Warm Pool Dynamics in the Indo-Pacific: China-Australia Joint Research in Nov 2018 - Mar 2019 <br>
+  Read more <a href="https://www.jamstec.go.jp/ymc/campaigns/IOP_MAMOS_CSHOR.html">here</a> <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="ocean-mixing">  Ocean Mixing: Japan-Indonesia Joint Research in Feb-Mar 2019 <br>
+  Read more <a href="https://www.jamstec.go.jp/ymc/docs/IOP_Implementation_Plan_Ocean_Mixing.pdf">here</a> <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="CAT">  CAT (Coastal Acoustic Tomography) Experiment in the Lombok Strait: Indonesia-China-US Joint Research in Feb - Mar 2019. This is also a joint study with Indonesia-Japan Ocean Mixing project.  <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="CAMP2EX">  CAMP2Ex (Clouds, Aerosol, Monsoon Processes-Philippines Experiment): US-Philippines Joint Research using an aircraft in July - Aug 2019 <br>
+  Read more <a href="https://espo.nasa.gov/camp2ex">here</a> <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="SST">  Tropical observations of atmospheric convection, biogenic emissions, ocean mixing, and processes generating intraseasonal SST variability: Australia-Indonesia Joint Research in Oct - Dec 2019 <br>
+  Read more <a href="https://mnf.csiro.au/en/Voyages/IN2019_V06">here</a> <a class="close" href="#">X</a> </div>
+
+<div class="popup" id="ELO">  ELO (Equatorial Line Observations): Equatorial Convectively Coupled Kelvin Waves Study in Nov 2021 - Feb 2022 (postponed) <br>
+  Read more <a href="https://elo.ucsd.edu/">here</a> <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="ELO-oceans">  ELO (Equatorial Line Observations)-Oceans: US and Indonesia Joint Research in Jan - Feb 2022 (postponed) <br>
+  Read more <a href="https://elo.ucsd.edu/">here</a> <a class="close" href="#">X</a> </div>
+
+<div class="popup" id="TerraMaris">  TerraMaris: UK-Indonesia-Australia Joint Research in Nov 2021 - Feb 2022 (postponed to Jan - Mar 2023) <br>
+  Read more <a href="https://gtr.ukri.org/projects?ref=NE%2FR016739%2F1">here</a> <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="YMC-banda-sea">  YMC-Banda Sea: US-Indonesia Joint Research in Jan 2022 (postponed to Jan - Feb 2023) <br>
+  Read more <a href="https://www.pmel.noaa.gov/ymc/sites/default/files/atoms/files/abstract_zhang_cruise.pdf">here</a> <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="MINTIE">  MINTIE (Measuring and Modeling the Indonesian Throughflow International Experiment): US, Indonesia, Australia and China Joint Research in Jan - Feb 2022 (postponed to Jan - Feb 2023) <br>
+  Read more <a href="https://people.climate.columbia.edu/projects/view/420">here</a> and<a href="https://cshor.csiro.au/mintie/">here</a> <a class="close" href="#">X</a> </div>
+	
+<div class="popup" id="DIMOP">  DIMOP (Diurnal Cycle Interactions with MJO Propagation): US-Indonesia Joint Long-term Measurement at Pontianak from 2019 (Pending) <br>
+   <a class="close" href="#">X</a> </div>
+	
+	</div>
+
+</body>
+</html>
