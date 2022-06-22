@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+/* For mobile */
+.popup {
+    padding: 14px;
+    background-color: rgba(100, 100, 100, .95);
+    color: white;
+    left: 50%;
+    top: 40%;
+    font-size: 7px;
+	font-family:'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+    position: absolute;
+    visibility: hidden;
+    width: 15%;
+  }
+	.popup:target {
+    visibility: visible;
+  }
+  .popup > .close {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background-color: black;
+    padding: 2px 6px;
+  }
+  .svg svg {
+    width: 75%
+  }
+
+/*Tablet */
+@media screen and (min-width: 576px) {
+	.popup {
+    padding: 14px;
+    background-color: rgba(100, 100, 100, .95);
+    color: white;
+    left: 50%;
+    top: 40%;
+    font-size: 9px;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+    position: absolute;
+    visibility: hidden;
+    width: 15%;
+  }
+	.popup:target {
+    visibility: visible;
+  }
+  .popup > .close {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background-color: black;
+    padding: 2px 6px;
+  }
+  .svg svg {
+    width: 75%
+  }
+}
+/* Desktop */
+@media screen and (min-width: 960px) {
+  .popup {
+    padding: 20px;
+    background-color: rgba(100, 100, 100, .95);
+    color: white;
+    left: 50%;
+    top: 50%;
+    font-size: 13px;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+    position: absolute;
+    visibility: hidden;
+    width: 15%;
+  }
+  .popup > .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: black;
+    padding: 4px 10px;
+  }
+  .popup:target {
+    visibility: visible;
+  }
+  .svg svg {
+    width: 75%
+  }
+}
